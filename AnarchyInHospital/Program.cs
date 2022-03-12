@@ -82,7 +82,7 @@ namespace AnarchyInHospital
         public Hospital(List<Patients> patients = null)
         {
             if (patients == null)
-                SetDefaultListSicks();
+                SetDefaultListPatients();
         }
 
         public void SortPatientsByName()
@@ -132,7 +132,7 @@ namespace AnarchyInHospital
             }
         }
 
-        private void SetDefaultListSicks()
+        private void SetDefaultListPatients()
         {
             int maximumDiseases = Enum.GetNames(typeof(Diseases)).Length + 1;
             int minimumDiseases = 1;
